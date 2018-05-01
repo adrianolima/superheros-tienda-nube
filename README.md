@@ -2,7 +2,7 @@
 
 ### Objective
 #### Steps to run
-- Run docker-compose.yml with **docker-composer up -d**
+- Run docker-compose.yml with **docker-compose up -d**
 - Install dependencies by composer with **php composer.phar install**
 - Set mysql credendial, use 'superheroes' on (db|user|pass) in .env file
 - run migrate **php artisan key:generate**
