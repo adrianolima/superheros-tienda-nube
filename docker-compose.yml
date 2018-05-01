@@ -1,0 +1,23 @@
+# v2 syntax
+version: '2'
+
+# Named volumes
+volumes:
+  # MySQL Data
+  superheroes-mysql-data:
+    driver: local
+
+services:
+  # MySQL (5.7)
+  mysql:
+    image: mysql:5.7
+    container_name: superheroes-mysql
+    volumes:
+      - superheroes-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=superheroes
+      - MYSQL_DATABASE=superheroes
+      - MYSQL_USER=superheroes
+      - MYSQL_PASSWORD=superheroes

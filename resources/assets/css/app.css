@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+  .img-hero {
+    width:100px;
+    height:100px;
+
+  }
+}
+.bg-home{
+  background: url("../../../css/6b0a3287527f3d7cd822282e7d73b38925f65cd1.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+a span {
+  color: #000;
+}
